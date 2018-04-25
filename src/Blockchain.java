@@ -29,6 +29,7 @@ public class Blockchain
 
                 if(!(curr && prev))
                     return false;
+              
             } catch (NoSuchAlgorithmException e) {
                 e.printStackTrace();
             }
