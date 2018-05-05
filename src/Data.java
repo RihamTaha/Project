@@ -3,10 +3,15 @@ public class Data {
     String To;
     float amount;
 
-    public Data(String from, String to, float amount) {
+    String Message=From+" "+To+" "+amount;
+
+
+    public Data(String from, String to, float amount)
+    {
         From = from;
         To = to;
         this.amount = amount;
+        this.Message=from+" "+to+" "+amount;
     }
 
     public Data() {
@@ -35,4 +40,13 @@ public class Data {
     public void setAmount(float amount) {
         this.amount = amount;
     }
+
+    public String getMessage() {
+        return Message;
+    }
+
+    public void setMessage(String message) {
+        Message = message;
+    }
+
 }
