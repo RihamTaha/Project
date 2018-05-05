@@ -96,6 +96,7 @@ public class Blockchain
 
         Boolean curr, prev;
 
+
         for(int k=1; k<BlockChain.size();k++)
         {
             Current_Block = BlockChain.get(k);

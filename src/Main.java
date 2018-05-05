@@ -2,6 +2,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class Main
 {
+
     public static void main(String[] args) throws NoSuchAlgorithmException {
         Blockchain BC=new Blockchain();
         Data L=new Data("Riham","Eslam",175);
@@ -23,7 +24,10 @@ public class Main
        /* System.out.println("The Second Time");
         BC.Mining("FCI");
         System.out.println( BC.CheckBalance("FCI"));*/
-
+            blockchain.printBlocks();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
     }
 
 
